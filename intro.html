@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        //ini adalah comment
+        /* 
+        ini juga comment 
+        tapi ada 2 baris
+        */
+        
+        //variable
+        var a = 10;
+        var b = 20;
+        var c = a + b; //jumlah
+        var d = a - b; //kurang
+        var e = a * b; //kali
+        var f = a / b; //bagi
+        var g = a % b; //modulus = sisa pembagian?
+        var h = a ^ b; //pangkat
+
+        console.log(c);
+        console.log(d);
+        console.log(e);
+        console.log(f);
+        console.log(g);
+        console.log(h);
+
+        console.log("Gabungan a dan b = " + c);
+
+        //DATA TYPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+        //ARRAYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+        var karakter = ["heizou", "rei", "shika"];
+
+        console.log(karakter);
+        console.log(karakter[0]);
+        console.log(karakter[1]);
+        console.log(karakter[2]);
+        console.log(karakter.length);
+        console.log(karakter[0] + " dan " + karakter[1]);
+
+        //OBJECT
+        var identitas = {
+            nama: "heizou", //berisi key dan value
+            umur: "21",
+            alamat: "inazuma"
+        }
+
+        console.log(identitas);
+        console.log(identitas.nama);
+        console.log(identitas.umur);
+        console.log(identitas.alamat);
+
+        console.log("I'm " + identitas.nama + ", the greatest detective in " + identitas.alamat);
+
+        var DataIdentitas = "nama : " + identitas.nama + ", umur : " + identitas.umur + ", alamat : " + identitas.alamat;
+        console.log(DataIdentitas);
+
+
+        //masuk ke FUNCTION =========================================
+        var pesan_bahaya = "Awas Bahaya!!!"
+
+        //FUNCTION
+        function bahaya(message) {
+            alert(pesan_bahaya + " JANGAN DIDEKATI!!!" + message);
+        }
+
+        //function call
+        bahaya(" Tegangan Tinggi");
+
+        //console.log(bahaya(10, 20));
+
+
+        function hitung(a, b) {
+            alert ("hasil = " + (a * b));
+        }
+        //function call
+        hitung (2,4);
+
+        //console.log(tambah(10, 20));
+
+        function profil(nama, umur) {
+            alert("Nama : " + nama + ", Umur : " + umur + " tahun");
+        }
+        //function call
+        profil ("heizou", 19);
+
+
+        //CONDITIONAL ===============================
+        var nilai = 75;
+        
+        if (nilai >= 80) {
+            alert("Nilai Anda A");
+        } 
+        else if (nilai >= 70 && nilai < 80) {
+            alert("Nilai Anda B");
+        } 
+        else if (nilai >= 60 && nilai < 70) {
+            alert("Nilai Anda B"); 
+        }
+        else {
+            alert("Maaf, Masih Gagal");
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
